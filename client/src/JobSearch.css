@@ -1,0 +1,72 @@
+.job-search-container {
+  padding: 30px;
+  background-color: #b9d2f2;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+}
+
+.company-card {
+  background-color: rgb(179, 173, 173);
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  transition: transform 0.2s ease;
+}
+
+.company-card:hover {
+  transform: translateY(-4px);
+}
+
+.company-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 18px;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.career-button {
+  background-color: #0b5ed7;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.career-button:hover {
+  background-color: #084298;
+}
+
+/* ✅ Mobile Responsiveness */
+/*@media (max-width: 600px) {
+  .company-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .company-info {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .career-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+  */
