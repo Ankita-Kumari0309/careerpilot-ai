@@ -3,7 +3,7 @@ from groq import Groq
 from job_store import db
 from tracker_store import get_tracker_counts
 
-MODEL = "llama-3.3-70b-versatile"  
+MODEL = "openai/gpt-oss-120b"  
 
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
