@@ -29,6 +29,7 @@ import BarChartIcon from "@mui/icons-material/BarChart";
 
 const experienceLevels = ["Beginner", "Mid-Level", "Experienced"];
 const MAX_FILE_MB = 10;
+const API_BASE = process.env.REACT_APP_API_BASE || "http://127.0.0.1:5000";
 
 const analysisSteps = [
   "Reading your resume…",
