@@ -10,7 +10,7 @@ def get_latest_resume_text(email: str) -> str:
     return doc.get("resume_text", "") if doc else ""
 
 
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "openai/gpt-oss-120b"
 QUESTIONS_PER_SESSION = 6  
 
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
